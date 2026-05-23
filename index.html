@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gabriel Saraiva — Desenvolvedor Front-End. Interfaces modernas, performáticas e experiências digitais de alto impacto." />
+  <title>Gabriel Saraiva | Desenvolvedor Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Gabriel Saraiva — início">
+        <span class="logo-bracket">{</span>GS<span class="logo-bracket">}</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb--cyan"></div>
+        <div class="hero-orb hero-orb--purple"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-label"><span class="prompt">&gt;</span> portfolio.init()</p>
+          <h1 id="hero-title" class="hero-title">
+            Gabriel Saraiva:<br />
+            <span class="text-gradient">Desenvolvedor Front-End</span>
+          </h1>
+          <p class="hero-subtitle">
+            Focado em criar interfaces modernas, performáticas e experiências digitais que conectam design, tecnologia e usabilidade.
+          </p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn--secondary">Entrar em Contato</a>
+          </div>
+          <ul class="hero-meta" aria-label="Destaques">
+            <li><span class="meta-key">stack</span> React · JS · CSS</li>
+            <li><span class="meta-key">focus</span> UI/UX · Performance</li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal reveal--delay">
+          <div class="hero-portrait-wrap">
+            <div class="hero-portrait-glow" aria-hidden="true"></div>
+            <img
+              src="assets/foto-de-gabriel1.png"
+              alt="Retrato de Gabriel Saraiva, desenvolvedor front-end"
+              class="hero-portrait"
+              width="480"
+              height="600"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-label">// sobre_mim</p>
+          <h2 id="about-title" class="section-title">Construindo interfaces com propósito</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-narrative reveal">
+            <p>
+              Minha trajetória é marcada pela transição para o desenvolvimento front-end — unindo curiosidade técnica com sensibilidade para experiência do usuário. Acredito que código bem escrito e design intencional andam juntos para criar produtos digitais que funcionam e encantam.
+            </p>
+            <p>
+              Busco arquiteturas web claras, acessíveis e performáticas, transformando requisitos em interfaces que comunicam valor desde o primeiro clique. Cada projeto é uma oportunidade de equilibrar estética, usabilidade e engenharia.
+            </p>
+          </div>
+          <aside class="about-stack card reveal reveal--delay" aria-labelledby="stack-title">
+            <h3 id="stack-title" class="card-title">Stack técnica</h3>
+            <div class="stack-group">
+              <p class="stack-label">Core</p>
+              <ul class="chip-list">
+                <li class="chip">HTML5</li>
+                <li class="chip">CSS3</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">React</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <p class="stack-label">Styling</p>
+              <ul class="chip-list">
+                <li class="chip chip--secondary">Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <p class="stack-label">Tools &amp; Integração</p>
+              <ul class="chip-list">
+                <li class="chip">APIs REST</li>
+                <li class="chip">Git / GitHub</li>
+                <li class="chip">n8n</li>
+              </ul>
+            </div>
+            <div class="skills-bars" aria-label="Áreas de foco">
+              <div class="skill-row">
+                <span class="skill-name">Front-End</span>
+                <div class="skill-track"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">UI / UX</span>
+                <div class="skill-track"><div class="skill-fill" style="--level: 85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">Performance</span>
+                <div class="skill-track"><div class="skill-fill" style="--level: 88%"></div></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-label">// meus_projetos</p>
+          <h2 id="projects-title" class="section-title">Trabalhos selecionados</h2>
+          <p class="section-desc">Projetos que combinam impacto visual, interatividade e código limpo.</p>
+        </header>
+
+        <div class="featured-projects">
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card-media">
+              <img src="assets/studio-aura.png" alt="Preview do projeto Studio Aura" loading="lazy" width="640" height="360" />
+              <span class="project-badge">Destaque</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Studio Aura</h3>
+              <p class="project-desc">
+                Plataforma premium com apresentação imersiva e navegação fluida. Foco em hierarquia visual, microinterações e experiência editorial.
+              </p>
+              <ul class="chip-list project-tags">
+                <li class="chip">React</li>
+                <li class="chip">Tailwind CSS</li>
+              </ul>
+              <a
+                href="https://gsaraivas.github.io/Studio-Aura/"
+                class="btn btn--secondary btn--project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto
+                <span class="btn-external" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured reveal reveal--delay">
+            <div class="project-card-media">
+              <img src="assets/super-mario.png" alt="Preview da landing Super Mario Galaxy — O Filme" loading="lazy" width="640" height="360" />
+              <span class="project-badge project-badge--tertiary">Cinemático</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Super Mario Galaxy — O Filme</h3>
+              <p class="project-desc">
+                Landing page temática com alto impacto visual, transições cinematográficas e narrativa envolvente para campanha promocional.
+              </p>
+              <ul class="chip-list project-tags">
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+                <li class="chip">JavaScript</li>
+              </ul>
+              <a
+                href="https://gsaraivas.github.io/Super-Mario-Galaxy/"
+                class="btn btn--secondary btn--project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto
+                <span class="btn-external" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="projects-subheading reveal">Mais projetos</h3>
+        <ul class="secondary-projects">
+          <li class="reveal">
+            <article class="project-card project-card--compact">
+              <div class="project-icon" aria-hidden="true">🐉</div>
+              <h4 class="project-title">House of the Dragon</h4>
+              <p class="project-desc">Landing temática com identidade visual forte e animações sutis.</p>
+              <ul class="chip-list project-tags">
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+              </ul>
+              <a
+                href="https://gsaraivas.github.io/House-oh-the-Dragon/"
+                class="btn btn--secondary btn--project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto
+                <span class="btn-external" aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </li>
+          <li class="reveal reveal--delay">
+            <article class="project-card project-card--compact">
+              <div class="project-icon" aria-hidden="true">🖥️</div>
+              <h4 class="project-title">hDC Host</h4>
+              <p class="project-desc">Interface de serviços de hospedagem com foco em clareza e conversão.</p>
+              <ul class="chip-list project-tags">
+                <li class="chip">UI</li>
+                <li class="chip">Responsivo</li>
+              </ul>
+              <a
+                href="https://gsaraivas.github.io/hDC-Host/"
+                class="btn btn--secondary btn--project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto
+                <span class="btn-external" aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="project-card project-card--compact">
+              <div class="project-icon" aria-hidden="true">📰</div>
+              <h4 class="project-title">Notícias Gerais</h4>
+              <p class="project-desc">Portal dinâmico de notícias com layout editorial e leitura fluida.</p>
+              <ul class="chip-list project-tags">
+                <li class="chip">JavaScript</li>
+                <li class="chip">API</li>
+              </ul>
+              <a
+                href="https://gsaraivas.github.io/Noticias-gerais/"
+                class="btn btn--secondary btn--project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto
+                <span class="btn-external" aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </li>
+          <li class="reveal reveal--delay">
+            <article class="project-card project-card--compact">
+              <div class="project-icon" aria-hidden="true">⚡</div>
+              <h4 class="project-title">PokeDex</h4>
+              <p class="project-desc">Integração com API pública para consulta e exibição de dados de Pokémon.</p>
+              <ul class="chip-list project-tags">
+                <li class="chip">REST API</li>
+                <li class="chip">Fetch</li>
+              </ul>
+              <a
+                href="https://gsaraivas.github.io/pokeDex/"
+                class="btn btn--secondary btn--project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto
+                <span class="btn-external" aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="section-label">// contato</p>
+          <h2 id="contact-title" class="contact-title">
+            Vamos transformar ideias em experiências digitais modernas?
+          </h2>
+          <p class="contact-body">
+            Entre em contato e vamos construir algo incrível juntos. Estou pronto para colaborar no seu próximo grande projeto.
+          </p>
+          <div class="contact-actions">
+            <a href="https://wa.me/11934848849" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.89-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-saraiva-da-silva-596814218/?isSelfProfile=true" class="btn btn--secondary" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gabriel Saraiva">
+              LinkedIn
+            </a>
+            <a href="https://github.com/GSaraivas" class="btn btn--secondary" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gabriel Saraiva">
+              GitHub
+            </a>
+            <a href="https://www.instagram.com/saraiva_x1/" class="btn btn--secondary" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gabriel Saraiva">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        <span class="prompt">&gt;</span> © <span id="year"></span> Gabriel Saraiva. Desenvolvido com HTML, CSS e JavaScript.
+      </p>
+      <a href="#top" class="footer-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
